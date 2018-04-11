@@ -1,11 +1,15 @@
 package compteur;
 
 public class Counter {
-
+	
+	private static int globalCounter=-1;
 	private int state;
 	
 	public Counter()  {
 		this.state=0;
+		if(globalCounter==-1)
+		{globalCounter=0;
+		}
 	}
 
 	public int getValue() {
@@ -15,6 +19,7 @@ public class Counter {
 
 	public void inc() {
 		this.state++;
+		globalCounter++;
 		
 	}
 
@@ -31,11 +36,18 @@ public class Counter {
 		return (eq);
 	}
 	
-	public boolean equales(Counter counter, Counter counter2) {
+	public boolean equals3(Counter counter, Counter counter2) {
 		boolean eq=false ;
-		if (counter.getValue()==this.getValue() && counter2.getValue()==this.getValue() )
+		if (counter.getValue()==this.getValue() && counter.getValue()==this.getValue() )
 			eq=true;
 		return (eq);
 	}
+	
+
+	public static int getglobalCounter() {
+		
+		return globalCounter;
+	}
+
 
 }

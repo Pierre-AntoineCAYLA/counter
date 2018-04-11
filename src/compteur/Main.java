@@ -37,8 +37,11 @@ int l=30;
 		}		
 		System.out.println(counter3);
 		
-		System.out.println(counter.equales(counter2, counter3));
+		System.out.println(counter.equals3(counter2, counter3));
 
+		System.out.println(counter.getglobalCounter());
 	}
+
+
 
 }
