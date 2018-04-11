@@ -3,7 +3,7 @@ package compteur;
 public class Main {
 
 	public static void main(String[] args) {
-int j=20;
+int j=30;
 
 		Counter counter = new Counter();
 		System.out.println(counter.getValue());
@@ -15,7 +15,7 @@ int j=20;
 		System.out.println(counter);
 		
 		
-		int k=30;		
+int k=30;		
 		
 		Counter counter2 = new Counter();
 		System.out.println(counter2.getValue());
@@ -26,7 +26,18 @@ int j=20;
 		}		
 		System.out.println(counter2);
 		
-		System.out.println(counter.equals(counter2));
+int l=30;		
+		
+		Counter counter3 = new Counter();
+		System.out.println(counter3.getValue());
+		for(int i=0;i< l; i++)
+		{
+		counter3.inc();
+		System.out.println(counter3.getValue());
+		}		
+		System.out.println(counter3);
+		
+		System.out.println(counter.equales(counter2, counter3));
 
 	}
 

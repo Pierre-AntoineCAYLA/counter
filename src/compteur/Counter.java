@@ -30,5 +30,12 @@ public class Counter {
 			eq=true;
 		return (eq);
 	}
+	
+	public boolean equales(Counter counter, Counter counter2) {
+		boolean eq=false ;
+		if (counter.getValue()==this.getValue() && counter2.getValue()==this.getValue() )
+			eq=true;
+		return (eq);
+	}
 
 }
